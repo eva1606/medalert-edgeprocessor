@@ -1,0 +1,23 @@
+{
+    "windowSize": 5,
+    "debounceMs": 8000,
+    "trend": {
+      "minPoints": 5,
+      "slopeThresholds": {
+        "HEART_RATE": 2.0,
+        "TEMPERATURE": 0.08,
+        "SPO2": -0.6
+      }
+    },
+    "thresholds": {
+      "HEART_RATE": { "min": 40, "max": 120 },
+      "SPO2": { "min": 92, "max": 100 },
+      "TEMPERATURE": { "min": 35.0, "max": 39.0 }
+    },
+    "plausibleRanges": {
+      "HEART_RATE": { "min": 0, "max": 250 },
+      "SPO2": { "min": 0, "max": 100 },
+      "TEMPERATURE": { "min": 20, "max": 45 }
+    }
+}
+  

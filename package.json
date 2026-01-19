@@ -1,0 +1,11 @@
+{
+  "name": "medalert-edgeprocessor",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "src/simulator.js",
+  "scripts": {
+    "start": "node src/simulator.js",
+    "test": "node --test"
+  }
+}
+
