@@ -6,6 +6,7 @@ const SignalProcessor = require("./modules/signalProcessor");
 const AnomalyDetector = require("./modules/anomalyDetector");
 const AlertManager = require("./modules/alertManager");
 const OfflineCache = require("./modules/offlineCache");
+const HistoryRepository = require("./repositories/HistoryRepository");  /* Basel Added */
 
 const { warn, info } = require("./utils/logger");
 
@@ -27,6 +28,7 @@ class EdgeProcessor {
     });
     this.alertManager = new AlertManager({ debounceMs: cfg.debounceMs });
     this.offlineCache = new OfflineCache();
+    this.historyRepository = new HistoryRepository(); /* add the history repository */
   }
 
   setOnline(flag) {
@@ -51,6 +53,8 @@ class EdgeProcessor {
       filtered.measurementType,
       filtered
     );
+
+    this.historyRepository.saveMeasurement(filtered); /* save the measurement */
 
     // 3) Anomaly detection
     const finding = this.anomalyDetector.buildAnomalyFinding(
@@ -81,6 +85,7 @@ class EdgeProcessor {
     );
 
     const deliveredAlert = this._handleAlertDelivery(alertEvent);
+    this.historyRepository.saveAlert(alertEvent);
 
     return { status: "alert", alert: deliveredAlert, anomaly: finding };
   }
