@@ -1,7 +1,7 @@
 const { createAlertEvent } = require("../models/alertEvent");
 const { nowIso } = require("../utils/time");
 
-class AlertManager {
+class AlertService {
   constructor({ debounceMs }) {
     this.debounceMs = debounceMs;
     this.lastAlertByKey = new Map(); // patientId|type|anomalyType -> timestamp
@@ -24,7 +24,7 @@ class AlertManager {
     return true;
   }
 
-  buildAlertEvent(patientId, anomaly, patientContext = {}) {
+  createAlert(patientId, anomaly, patientContext = {}) {
     return createAlertEvent({
       alertId: `A-${Date.now()}`,
       patientId,
@@ -36,10 +36,10 @@ class AlertManager {
     });
   }
 
-  emitAlert(alertEvent) {
+  publishAlert(alertEvent) {
     // For demo: console output
     return alertEvent;
   }
 }
 
-module.exports = AlertManager;
+module.exports = AlertService;

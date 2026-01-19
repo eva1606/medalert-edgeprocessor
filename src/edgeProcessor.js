@@ -26,7 +26,7 @@ class EdgeProcessor {
       thresholds: cfg.thresholds,
       trendConfig: cfg.trend
     });
-    this.AlertService = new AlertService({ debounceMs: cfg.debounceMs });
+    this.alertService = new AlertService({ debounceMs: cfg.debounceMs });
     this.offlineCache = new OfflineCache();
     this.historyRepository = new HistoryRepository(); /* add the history repository */
   }
@@ -34,10 +34,33 @@ class EdgeProcessor {
   setOnline(flag) {
     this.offlineCache.setOnline(flag);
   }
+  filterNoise(measurement) {                             // ADDED
+    return this.signalProcessor.applyNoiseFiltering(measurement);
+  }
+
+  checkQuality(measurement) {                            // ADDED
+    return this.signalValidator.buildValidationResult(measurement);
+  }
+
+  analyzeThreshold(window, type) {                       // ADDED
+    return this.anomalyDetector.detectThresholdAnomaly(window, type);
+  }
+
+  detectTrend(window, type) {                            // ADDED
+    return this.anomalyDetector.detectTrendAnomaly(window, type);
+  }
+
+  cacheEvent(measurement) {                              // ADDED
+    this.offlineCache.storeMeasurement(measurement);
+  }
+
+  syncCachedEvents() {                                  // ADDED
+    return this.offlineCache.flushCachedData();
+  }
 
   ingestMeasurement(measurement) {
     // 1) Validate
-    const validation = this.signalValidator.buildValidationResult(measurement);
+    const validation = this.checkQuality(measurement);  // modified
     if (!validation.ok) {
       warn("Measurement discarded", {
         reason: validation.reason,
@@ -47,7 +70,7 @@ class EdgeProcessor {
     }
 
     // 2) Processing + window update
-    const filtered = this.signalProcessor.applyNoiseFiltering(measurement);
+    const filtered = this.filterNoise(measurement);   // modified
     const window = this.signalProcessor.updateMeasurementWindow(
       filtered.patientId,
       filtered.measurementType,
@@ -56,11 +79,9 @@ class EdgeProcessor {
 
     this.historyRepository.saveMeasurement(filtered); /* save the measurement */
 
-    // 3) Anomaly detection
-    const finding = this.anomalyDetector.buildAnomalyFinding(
-      window,
-      filtered.measurementType
-    );
+    const finding =
+      this.analyzeThreshold(window, filtered.measurementType) || // modified
+      this.detectTrend(window, filtered.measurementType);        // modified
 
     // Always handle measurement delivery (online/offline)
     this._handleMeasurementDelivery(filtered);
@@ -69,16 +90,16 @@ class EdgeProcessor {
       return { status: "ok", measurement: filtered };
     }
 
-    // 4) Alert handling (debounce)
-    const canEmit = this.AlertService.applyDebounceRules(
+    const canEmit = this.alertService.applyDebounceRules( // CHANGED: alertService naming
       filtered.patientId,
       finding
     );
+
     if (!canEmit) {
       return { status: "ok", measurement: filtered, note: "debounced" };
     }
 
-    const alertEvent = this.AlertService.buildAlertEvent(
+    const alertEvent = this.alertService.createAlert(
       filtered.patientId,
       finding,
       { measurementType: filtered.measurementType }
@@ -94,7 +115,7 @@ class EdgeProcessor {
     if (!this.offlineCache.checkConnectivityStatus()) {
       return { status: "offline", flushed: null };
     }
-    const flushed = this.offlineCache.flushCachedData();
+    const flushed = this.syncCachedEvents(); //modified
     info("Flushed cached data", {
       measurements: flushed.measurements.length,
       alerts: flushed.alerts.length
@@ -107,12 +128,12 @@ class EdgeProcessor {
       // Real system: send to backend (API Gateway). Demo: do nothing.
       return;
     }
-    this.offlineCache.storeMeasurement(measurement);
+    this.cacheEvent(measurement);   //modified
   }
 
   _handleAlertDelivery(alertEvent) {
     if (this.offlineCache.checkConnectivityStatus()) {
-      return this.AlertService.emitAlert(alertEvent);
+      return this.alertService.publishAlert(alertEvent);
     }
     this.offlineCache.storeAlert(alertEvent);
     return alertEvent;
