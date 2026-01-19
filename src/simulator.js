@@ -18,6 +18,12 @@ const patientId = "P001";
 
 const stream = [
   meas(patientId, "HEART_RATE", 78),
+  meas(patientId, "HEART_RATE", 82),
+
+  // ⚠️ urgence: tachycardie
+  meas(patientId, "HEART_RATE", 180),
+
+  meas(patientId, "HEART_RATE", 78),
   meas(patientId, "SPO2", 98),
   meas(patientId, "TEMPERATURE", 36.9),
 
@@ -75,3 +81,4 @@ const interval = setInterval(() => {
     console.log(`❌ DISCARDED | ${res.reason}`);
   }
 }, 1000);
+
