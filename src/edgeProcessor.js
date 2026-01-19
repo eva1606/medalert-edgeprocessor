@@ -4,7 +4,7 @@ const path = require("path");
 const SignalValidator = require("./modules/signalValidator");
 const SignalProcessor = require("./modules/signalProcessor");
 const AnomalyDetector = require("./modules/anomalyDetector");
-const AlertManager = require("./modules/alertManager");
+const AlertService = require("./modules/alertService");
 const OfflineCache = require("./modules/offlineCache");
 const HistoryRepository = require("./repositories/HistoryRepository");  /* Basel Added */
 
@@ -26,7 +26,7 @@ class EdgeProcessor {
       thresholds: cfg.thresholds,
       trendConfig: cfg.trend
     });
-    this.alertManager = new AlertManager({ debounceMs: cfg.debounceMs });
+    this.AlertService = new AlertService({ debounceMs: cfg.debounceMs });
     this.offlineCache = new OfflineCache();
     this.historyRepository = new HistoryRepository(); /* add the history repository */
   }
@@ -70,7 +70,7 @@ class EdgeProcessor {
     }
 
     // 4) Alert handling (debounce)
-    const canEmit = this.alertManager.applyDebounceRules(
+    const canEmit = this.AlertService.applyDebounceRules(
       filtered.patientId,
       finding
     );
@@ -78,7 +78,7 @@ class EdgeProcessor {
       return { status: "ok", measurement: filtered, note: "debounced" };
     }
 
-    const alertEvent = this.alertManager.buildAlertEvent(
+    const alertEvent = this.AlertService.buildAlertEvent(
       filtered.patientId,
       finding,
       { measurementType: filtered.measurementType }
@@ -112,7 +112,7 @@ class EdgeProcessor {
 
   _handleAlertDelivery(alertEvent) {
     if (this.offlineCache.checkConnectivityStatus()) {
-      return this.alertManager.emitAlert(alertEvent);
+      return this.AlertService.emitAlert(alertEvent);
     }
     this.offlineCache.storeAlert(alertEvent);
     return alertEvent;
