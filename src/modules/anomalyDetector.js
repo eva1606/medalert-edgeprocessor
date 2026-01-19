@@ -28,9 +28,8 @@ class AnomalyDetector {
     }
 
     if (
-      (measurementType === "HEART_RATE" || measurementType === "TEMPERATURE") &&
-      last.value > t.max
-    ) {
+      measurementType === "HEART_RATE" && last.value > t.max
+    ) {    
       return createAnomaly({
         anomalyType: "THRESHOLD_HIGH",
         measurementType,
@@ -41,6 +40,17 @@ class AnomalyDetector {
         context: { last }
       });
     }
+    if (measurementType === "TEMPERATURE" && last.value >= t.max) {
+      return createAnomaly({
+        anomalyType: "THRESHOLD_HIGH",
+        measurementType,
+        observedValue: last.value,
+        expectedRange: t,
+        detectionTimestamp: nowIso(),
+        message: `${measurementType} too high`,
+        context: { last }
+      });
+    }    
 
     return null;
   }
