@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MedAlert – Dashboard</title>
+  <style>
+    body { font-family: Arial; background: #f5f5f5; }
+    .card { background: white; padding: 15px; margin: 10px; border-radius: 6px; }
+    .ok { color: green; }
+    .alert { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h1>MedAlert – Edge Dashboard</h1>
+
+  <div class="card">
+    <strong>Status:</strong>
+    <span id="status">ONLINE</span>
+  </div>
+
+  <div class="card">
+    <h3>Measurements</h3>
+    <div>Heart Rate: <span id="hr" class="ok">--</span></div>
+    <div>SpO2: <span id="spo2" class="ok">--</span></div>
+    <div>Temperature: <span id="temp" class="ok">--</span></div>
+  </div>
+
+  <div class="card">
+    <h3>Alerts</h3>
+    <ul id="alerts"></ul>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

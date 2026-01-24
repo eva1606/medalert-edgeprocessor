@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node src/simulator.js",
     "test": "node --test"
+  },
+  "dependencies": {
+    "electron": "^40.0.0"
   }
 }
-
