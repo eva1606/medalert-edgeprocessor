@@ -18,6 +18,12 @@
       "HEART_RATE": { "min": 0, "max": 250 },
       "SPO2": { "min": 0, "max": 100 },
       "TEMPERATURE": { "min": 20, "max": 45 }
+    },
+    "severityPolicy": {
+      "HEART_RATE": "MEDIUM",
+      "SPO2": "HIGH",
+      "TEMPERATURE": "HIGH"
     }
+
 }
   
