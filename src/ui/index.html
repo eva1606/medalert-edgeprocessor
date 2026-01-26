@@ -3,32 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <title>MedAlert – Dashboard</title>
-  <style>
-    body { font-family: Arial; background: #f5f5f5; }
-    .card { background: white; padding: 15px; margin: 10px; border-radius: 6px; }
-    .ok { color: green; }
-    .alert { color: red; font-weight: bold; }
-  </style>
-</head>
-<body>
 
+  <!-- CSS séparé -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
   <h1>MedAlert – Edge Dashboard</h1>
 
-  <div class="card">
-    <strong>Status:</strong>
-    <span id="status">ONLINE</span>
-  </div>
+  <div class="grid">
+    <!-- LEFT: Controls -->
+    <div class="card">
+      <div class="row space-between">
+        <strong>Status</strong>
+        <span id="statusPill" class="pill offline">OFFLINE</span>
+      </div>
 
-  <div class="card">
-    <h3>Measurements</h3>
-    <div>Heart Rate: <span id="hr" class="ok">--</span></div>
-    <div>SpO2: <span id="spo2" class="ok">--</span></div>
-    <div>Temperature: <span id="temp" class="ok">--</span></div>
-  </div>
+      <div class="mt">
+        <h3>Send Measurement</h3>
 
-  <div class="card">
-    <h3>Alerts</h3>
-    <ul id="alerts"></ul>
+        <div class="row mb">
+          <label class="flex">
+            Patient:
+            <input id="patientId" value="p1" />
+          </label>
+        </div>
+
+        <div class="row mb">
+          <label class="flex">
+            Type:
+            <select id="type">
+              <option value="HEART_RATE">HEART_RATE</option>
+              <option value="SPO2">SPO2</option>
+              <option value="TEMPERATURE">TEMPERATURE</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="row mb">
+          <label class="flex">
+            Value:
+            <input id="value" type="number" step="0.1" value="80" />
+          </label>
+
+          <label class="flex">
+            Signal Quality:
+            <input id="signalQuality" type="number" step="0.1" value="1.0" />
+          </label>
+        </div>
+
+        <button id="sendBtn" class="btn-primary">Send measurement</button>
+
+        <h4 class="mt-sm">Connectivity</h4>
+        <div class="row">
+          <button id="goOnlineBtn">Go Online</button>
+          <button id="goOfflineBtn">Go Offline</button>
+          <button id="flushBtn">Flush sync</button>
+        </div>
+
+        <div id="toast" class="toast"></div>
+      </div>
+    </div>
+
+    <!-- MIDDLE: History Measurements -->
+    <div class="card">
+      <h3>History — Measurements</h3>
+      <table id="measurementsTable">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Type</th>
+            <th>Value</th>
+            <th>Signal</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- RIGHT: History Alerts -->
+    <div class="card">
+      <h3>History — Alerts</h3>
+      <table id="alertsTable">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Patient</th>
+            <th>Alert Type</th>
+            <th>Severity</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Bottom: Current Measurements -->
+    <div class="card full-width">
+      <h3>Current Measurements</h3>
+      <div>Heart Rate: <span id="hr" class="ok">--</span></div>
+      <div>SpO2: <span id="spo2" class="ok">--</span></div>
+      <div>Temperature: <span id="temp" class="ok">--</span></div>
+    </div>
   </div>
 
   <script src="dashboard.js"></script>
