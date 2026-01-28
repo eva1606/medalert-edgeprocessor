@@ -1,4 +1,23 @@
-// test/edgeProcessor.test.js
+/**
+ * edgeProcessor.test.js
+ * ---------------------
+ * Unit-level validation tests for the EdgeProcessor module.
+ *
+ * Purpose:
+ * - Verify correctness of internal logic
+ * - Validate compliance with the Low-Level Design (LLD)
+ * - Ensure proper handling of valid and invalid inputs
+ *
+ * Scope:
+ * - Functional correctness
+ * - Input validation and rejection
+ * - Sliding window behavior
+ * - Debounce logic
+ * - Offline caching behavior
+ *
+ * Note:
+ * These tests do NOT validate system-level performance or UI behavior.
+ */
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
