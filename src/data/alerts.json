@@ -1,0 +1,614 @@
+[
+  {
+    "alertId": "A-1769588141903",
+    "patientId": "p2",
+    "alertType": "THRESHOLD_LOW",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-28T08:15:41.903Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_LOW",
+      "measurementType": "SPO2",
+      "observedValue": 80,
+      "expectedRange": {
+        "min": 92,
+        "max": 100
+      },
+      "detectionTimestamp": "2026-01-28T08:15:41.902Z",
+      "message": "SPO2 too low",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "M-1769588141899-766",
+            "patientId": "p2",
+            "measurementType": "SPO2",
+            "value": 80,
+            "timestamp": "2026-01-28T08:15:41.900Z",
+            "signalQuality": 1
+          },
+          "value": 80
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "SPO2"
+    }
+  },
+  {
+    "alertId": "A-1769588150884",
+    "patientId": "p2",
+    "alertType": "THRESHOLD_LOW",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-28T08:15:50.884Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_LOW",
+      "measurementType": "SPO2",
+      "observedValue": 80,
+      "expectedRange": {
+        "min": 92,
+        "max": 100
+      },
+      "detectionTimestamp": "2026-01-28T08:15:50.884Z",
+      "message": "SPO2 too low",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "M-1769588150883-482",
+            "patientId": "p2",
+            "measurementType": "SPO2",
+            "value": 80,
+            "timestamp": "2026-01-28T08:15:50.883Z",
+            "signalQuality": 1
+          },
+          "value": 80
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "SPO2"
+    }
+  },
+  {
+    "alertId": "A-1769588169196",
+    "patientId": "p2",
+    "alertType": "THRESHOLD_LOW",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-28T08:16:09.196Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_LOW",
+      "measurementType": "SPO2",
+      "observedValue": 80,
+      "expectedRange": {
+        "min": 92,
+        "max": 100
+      },
+      "detectionTimestamp": "2026-01-28T08:16:09.196Z",
+      "message": "SPO2 too low",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "M-1769588169195-570",
+            "patientId": "p2",
+            "measurementType": "SPO2",
+            "value": 80,
+            "timestamp": "2026-01-28T08:16:09.195Z",
+            "signalQuality": 1
+          },
+          "value": 80
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "SPO2"
+    }
+  },
+  {
+    "alertId": "A-1769588197710",
+    "patientId": "p2",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-28T08:16:37.710Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "TEMPERATURE",
+      "observedValue": 45,
+      "expectedRange": {
+        "min": 35,
+        "max": 39
+      },
+      "detectionTimestamp": "2026-01-28T08:16:37.709Z",
+      "message": "TEMPERATURE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "M-1769588197708-935",
+            "patientId": "p2",
+            "measurementType": "TEMPERATURE",
+            "value": 45,
+            "timestamp": "2026-01-28T08:16:37.708Z",
+            "signalQuality": 1
+          },
+          "value": 45
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "TEMPERATURE"
+    }
+  },
+  {
+    "alertId": "A-1769588206398",
+    "patientId": "p1",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-28T08:16:46.398Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "TEMPERATURE",
+      "observedValue": 45,
+      "expectedRange": {
+        "min": 35,
+        "max": 39
+      },
+      "detectionTimestamp": "2026-01-28T08:16:46.398Z",
+      "message": "TEMPERATURE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "M-1769588206398-421",
+            "patientId": "p1",
+            "measurementType": "TEMPERATURE",
+            "value": 45,
+            "timestamp": "2026-01-28T08:16:46.398Z",
+            "signalQuality": 1
+          },
+          "value": 45
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "TEMPERATURE"
+    }
+  },
+  {
+    "alertId": "A-1769588258720",
+    "patientId": "p1",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-28T08:17:38.720Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "TEMPERATURE",
+      "observedValue": 45,
+      "expectedRange": {
+        "min": 35,
+        "max": 39
+      },
+      "detectionTimestamp": "2026-01-28T08:17:38.720Z",
+      "message": "TEMPERATURE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "M-1769588258720-193",
+            "patientId": "p1",
+            "measurementType": "TEMPERATURE",
+            "value": 45,
+            "timestamp": "2026-01-28T08:17:38.720Z",
+            "signalQuality": 1.5
+          },
+          "value": 45
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "TEMPERATURE"
+    }
+  },
+  {
+    "alertId": "A-1769588263986",
+    "patientId": "p2",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-28T08:17:43.986Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "TEMPERATURE",
+      "observedValue": 45,
+      "expectedRange": {
+        "min": 35,
+        "max": 39
+      },
+      "detectionTimestamp": "2026-01-28T08:17:43.986Z",
+      "message": "TEMPERATURE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "M-1769588263986-711",
+            "patientId": "p2",
+            "measurementType": "TEMPERATURE",
+            "value": 45,
+            "timestamp": "2026-01-28T08:17:43.986Z",
+            "signalQuality": 1.5
+          },
+          "value": 45
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "TEMPERATURE"
+    }
+  },
+  {
+    "alertId": "A-1769588276654",
+    "patientId": "p1",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-28T08:17:56.654Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "TEMPERATURE",
+      "observedValue": 45,
+      "expectedRange": {
+        "min": 35,
+        "max": 39
+      },
+      "detectionTimestamp": "2026-01-28T08:17:56.654Z",
+      "message": "TEMPERATURE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "M-1769588276653-536",
+            "patientId": "p1",
+            "measurementType": "TEMPERATURE",
+            "value": 45,
+            "timestamp": "2026-01-28T08:17:56.653Z",
+            "signalQuality": 1.5
+          },
+          "value": 45
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "TEMPERATURE"
+    }
+  },
+  {
+    "alertId": "A-1769614415081",
+    "patientId": "p1",
+    "alertType": "THRESHOLD_LOW",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-28T15:33:35.081Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_LOW",
+      "measurementType": "SPO2",
+      "observedValue": 80,
+      "expectedRange": {
+        "min": 92,
+        "max": 100
+      },
+      "detectionTimestamp": "2026-01-28T15:33:35.081Z",
+      "message": "SPO2 too low",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "M-1769614415079-15",
+            "patientId": "p1",
+            "measurementType": "SPO2",
+            "value": 80,
+            "timestamp": "2026-01-28T15:33:35.079Z",
+            "signalQuality": 1
+          },
+          "value": 80
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "SPO2"
+    }
+  },
+  {
+    "alertId": "A-1769885351983",
+    "patientId": "P001",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "MEDIUM",
+    "timestamp": "2026-01-31T18:49:11.983Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "HEART_RATE",
+      "observedValue": 140,
+      "expectedRange": {
+        "min": 40,
+        "max": 120
+      },
+      "detectionTimestamp": "2026-01-31T18:49:11.983Z",
+      "message": "HEART_RATE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "T-1769885351963-231",
+            "patientId": "P001",
+            "measurementType": "HEART_RATE",
+            "value": 140,
+            "timestamp": "2026-01-31T18:49:11.963Z",
+            "signalQuality": 1
+          },
+          "value": 140
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "HEART_RATE"
+    }
+  },
+  {
+    "alertId": "A-1769885352041",
+    "patientId": "P001",
+    "alertType": "THRESHOLD_LOW",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-31T18:49:12.041Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_LOW",
+      "measurementType": "SPO2",
+      "observedValue": 89,
+      "expectedRange": {
+        "min": 92,
+        "max": 100
+      },
+      "detectionTimestamp": "2026-01-31T18:49:12.041Z",
+      "message": "SPO2 too low",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "T-1769885352004-956",
+            "patientId": "P001",
+            "measurementType": "SPO2",
+            "value": 89,
+            "timestamp": "2026-01-31T18:49:12.004Z",
+            "signalQuality": 1
+          },
+          "value": 89
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "SPO2"
+    }
+  },
+  {
+    "alertId": "A-1769885352069",
+    "patientId": "P001",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-31T18:49:12.069Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "TEMPERATURE",
+      "observedValue": 39,
+      "expectedRange": {
+        "min": 35,
+        "max": 39
+      },
+      "detectionTimestamp": "2026-01-31T18:49:12.069Z",
+      "message": "TEMPERATURE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "T-1769885352043-500",
+            "patientId": "P001",
+            "measurementType": "TEMPERATURE",
+            "value": 39,
+            "timestamp": "2026-01-31T18:49:12.043Z",
+            "signalQuality": 1
+          },
+          "value": 39
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "TEMPERATURE"
+    }
+  },
+  {
+    "alertId": "A-1769885352556",
+    "patientId": "P001",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "MEDIUM",
+    "timestamp": "2026-01-31T18:49:12.556Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "HEART_RATE",
+      "observedValue": 140,
+      "expectedRange": {
+        "min": 40,
+        "max": 120
+      },
+      "detectionTimestamp": "2026-01-31T18:49:12.556Z",
+      "message": "HEART_RATE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "T-1769885352498-890",
+            "patientId": "P001",
+            "measurementType": "HEART_RATE",
+            "value": 140,
+            "timestamp": "2026-01-31T18:49:12.498Z",
+            "signalQuality": 1
+          },
+          "value": 140
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "HEART_RATE"
+    }
+  },
+  {
+    "alertId": "A-1769885352614",
+    "patientId": "P001",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "MEDIUM",
+    "timestamp": "2026-01-31T18:49:12.614Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "HEART_RATE",
+      "observedValue": 140,
+      "expectedRange": {
+        "min": 40,
+        "max": 120
+      },
+      "detectionTimestamp": "2026-01-31T18:49:12.614Z",
+      "message": "HEART_RATE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "T-1769885352589-678",
+            "patientId": "P001",
+            "measurementType": "HEART_RATE",
+            "value": 140,
+            "timestamp": "2026-01-31T18:49:12.589Z",
+            "signalQuality": 1
+          },
+          "value": 140
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "HEART_RATE"
+    }
+  },
+  {
+    "alertId": "A-1769885352652",
+    "patientId": "P002",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "MEDIUM",
+    "timestamp": "2026-01-31T18:49:12.652Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "HEART_RATE",
+      "observedValue": 140,
+      "expectedRange": {
+        "min": 40,
+        "max": 120
+      },
+      "detectionTimestamp": "2026-01-31T18:49:12.652Z",
+      "message": "HEART_RATE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "T-1769885352615-158",
+            "patientId": "P002",
+            "measurementType": "HEART_RATE",
+            "value": 140,
+            "timestamp": "2026-01-31T18:49:12.615Z",
+            "signalQuality": 1
+          },
+          "value": 140
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "HEART_RATE"
+    }
+  },
+  {
+    "alertId": "A-1769885352815",
+    "patientId": "P001",
+    "alertType": "THRESHOLD_LOW",
+    "severityLevel": "HIGH",
+    "timestamp": "2026-01-31T18:49:12.815Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_LOW",
+      "measurementType": "SPO2",
+      "observedValue": 90,
+      "expectedRange": {
+        "min": 92,
+        "max": 100
+      },
+      "detectionTimestamp": "2026-01-31T18:49:12.815Z",
+      "message": "SPO2 too low",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "T-1769885352790-88",
+            "patientId": "P001",
+            "measurementType": "SPO2",
+            "value": 90,
+            "timestamp": "2026-01-31T18:49:12.790Z",
+            "signalQuality": 1
+          },
+          "value": 90
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "SPO2"
+    }
+  },
+  {
+    "alertId": "A-1769885352839",
+    "patientId": "P001",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "MEDIUM",
+    "timestamp": "2026-01-31T18:49:12.839Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "HEART_RATE",
+      "observedValue": 140,
+      "expectedRange": {
+        "min": 40,
+        "max": 120
+      },
+      "detectionTimestamp": "2026-01-31T18:49:12.839Z",
+      "message": "HEART_RATE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "T-1769885352816-659",
+            "patientId": "P001",
+            "measurementType": "HEART_RATE",
+            "value": 140,
+            "timestamp": "2026-01-31T18:49:12.816Z",
+            "signalQuality": 1
+          },
+          "value": 140
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "HEART_RATE"
+    }
+  },
+  {
+    "alertId": "A-1769885352878",
+    "patientId": "P-URG1",
+    "alertType": "THRESHOLD_HIGH",
+    "severityLevel": "MEDIUM",
+    "timestamp": "2026-01-31T18:49:12.878Z",
+    "associatedAnomaly": {
+      "anomalyType": "THRESHOLD_HIGH",
+      "measurementType": "HEART_RATE",
+      "observedValue": 180,
+      "expectedRange": {
+        "min": 40,
+        "max": 120
+      },
+      "detectionTimestamp": "2026-01-31T18:49:12.878Z",
+      "message": "HEART_RATE too high",
+      "context": {
+        "last": {
+          "m": {
+            "measurementId": "EM-1",
+            "patientId": "P-URG1",
+            "measurementType": "HEART_RATE",
+            "value": 180,
+            "timestamp": "2026-01-31T18:49:12.846Z",
+            "signalQuality": 1
+          },
+          "value": 180
+        }
+      }
+    },
+    "contextualMetadata": {
+      "measurementType": "HEART_RATE"
+    }
+  }
+]
