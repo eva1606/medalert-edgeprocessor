@@ -29,6 +29,7 @@ function meas(patientId, type, value, quality = 1.0) {
   };
 }
 
+
 const patientId = "P001";
 /**
  * Validation stream
@@ -109,6 +110,11 @@ const interval = setInterval(() => {
 
   const item = stream[i++];
 
+  if (item.log) {
+    console.log("\n" + item.log);
+    return;
+  }
+  
   if (item.cmd === "offline") {
     console.log("\n🌐 TEST – Connectivity switched to OFFLINE");
     edge.setOnline(false);
