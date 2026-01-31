@@ -1,0 +1,722 @@
+[
+  {
+    "measurementId": "M-1769588141899-766",
+    "patientId": "p2",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T08:15:41.900Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588149730-584",
+    "patientId": "p2",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T08:15:49.730Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588150883-482",
+    "patientId": "p2",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T08:15:50.883Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588152134-430",
+    "patientId": "p2",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T08:15:52.134Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588153400-906",
+    "patientId": "p2",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T08:15:53.400Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588154090-226",
+    "patientId": "p2",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T08:15:54.090Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588169195-570",
+    "patientId": "p2",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T08:16:09.195Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588173041-589",
+    "patientId": "p2",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T08:16:13.041Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588175722-51",
+    "patientId": "p2",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T08:16:15.722Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588188084-246",
+    "patientId": "p2",
+    "measurementType": "HEART_RATE",
+    "value": 80,
+    "timestamp": "2026-01-28T08:16:28.084Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588197708-935",
+    "patientId": "p2",
+    "measurementType": "TEMPERATURE",
+    "value": 45,
+    "timestamp": "2026-01-28T08:16:37.708Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588200069-637",
+    "patientId": "p2",
+    "measurementType": "TEMPERATURE",
+    "value": 45,
+    "timestamp": "2026-01-28T08:16:40.069Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588206398-421",
+    "patientId": "p1",
+    "measurementType": "TEMPERATURE",
+    "value": 45,
+    "timestamp": "2026-01-28T08:16:46.398Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588211930-605",
+    "patientId": "p1",
+    "measurementType": "TEMPERATURE",
+    "value": 45,
+    "timestamp": "2026-01-28T08:16:51.930Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588212388-519",
+    "patientId": "p1",
+    "measurementType": "TEMPERATURE",
+    "value": 45,
+    "timestamp": "2026-01-28T08:16:52.388Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588212846-903",
+    "patientId": "p1",
+    "measurementType": "TEMPERATURE",
+    "value": 45,
+    "timestamp": "2026-01-28T08:16:52.846Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588213046-739",
+    "patientId": "p1",
+    "measurementType": "TEMPERATURE",
+    "value": 45,
+    "timestamp": "2026-01-28T08:16:53.046Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769588258720-193",
+    "patientId": "p1",
+    "measurementType": "TEMPERATURE",
+    "value": 45,
+    "timestamp": "2026-01-28T08:17:38.720Z",
+    "signalQuality": 1.5
+  },
+  {
+    "measurementId": "M-1769588263986-711",
+    "patientId": "p2",
+    "measurementType": "TEMPERATURE",
+    "value": 45,
+    "timestamp": "2026-01-28T08:17:43.986Z",
+    "signalQuality": 1.5
+  },
+  {
+    "measurementId": "M-1769588276653-536",
+    "patientId": "p1",
+    "measurementType": "TEMPERATURE",
+    "value": 45,
+    "timestamp": "2026-01-28T08:17:56.653Z",
+    "signalQuality": 1.5
+  },
+  {
+    "measurementId": "M-1769614415079-15",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:35.079Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614415601-833",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:35.601Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614416310-699",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:36.310Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614416567-643",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:36.567Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614416737-185",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:36.737Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614416909-292",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:36.909Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614417071-404",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:37.071Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614417249-874",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:37.249Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614417399-606",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:37.399Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614417587-261",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:37.587Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614418379-19",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:38.379Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614418542-309",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:38.542Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614418709-394",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:38.709Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614418871-212",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:38.871Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614419047-87",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:39.047Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614419216-301",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:39.216Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614419387-451",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:39.387Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614419552-462",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:39.552Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614419721-146",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:39.721Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614419887-146",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:39.887Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614420045-708",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:40.045Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614420219-621",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:40.219Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614420392-797",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:40.392Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614420556-829",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:40.556Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614420715-497",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:40.715Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614420881-713",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:40.881Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614421039-752",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:41.039Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614421209-465",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:41.209Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769614421389-142",
+    "patientId": "p1",
+    "measurementType": "SPO2",
+    "value": 80,
+    "timestamp": "2026-01-28T15:33:41.389Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885351930-172",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 80,
+    "timestamp": "2026-01-31T18:49:11.928Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885351963-231",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 140,
+    "timestamp": "2026-01-31T18:49:11.963Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352004-956",
+    "patientId": "P001",
+    "measurementType": "SPO2",
+    "value": 89,
+    "timestamp": "2026-01-31T18:49:12.004Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352043-500",
+    "patientId": "P001",
+    "measurementType": "TEMPERATURE",
+    "value": 39,
+    "timestamp": "2026-01-31T18:49:12.043Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352081-444",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 80,
+    "timestamp": "2026-01-01T10:00:00.000Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352149-855",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 70,
+    "timestamp": "2026-01-31T18:49:12.149Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352188-150",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 71,
+    "timestamp": "2026-01-31T18:49:12.188Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352228-547",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 72,
+    "timestamp": "2026-01-31T18:49:12.228Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352285-95",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 73,
+    "timestamp": "2026-01-31T18:49:12.285Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352339-88",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 74,
+    "timestamp": "2026-01-31T18:49:12.339Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352375-548",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 75,
+    "timestamp": "2026-01-31T18:49:12.375Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352402-722",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 76,
+    "timestamp": "2026-01-31T18:49:12.402Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352429-172",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 77,
+    "timestamp": "2026-01-31T18:49:12.429Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352451-498",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 78,
+    "timestamp": "2026-01-31T18:49:12.451Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352473-727",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 79,
+    "timestamp": "2026-01-31T18:49:12.473Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352498-890",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 140,
+    "timestamp": "2026-01-31T18:49:12.498Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352559-458",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 150,
+    "timestamp": "2026-01-31T18:49:12.559Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352589-678",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 140,
+    "timestamp": "2026-01-31T18:49:12.589Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352615-158",
+    "patientId": "P002",
+    "measurementType": "HEART_RATE",
+    "value": 140,
+    "timestamp": "2026-01-31T18:49:12.615Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352654-310",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 90,
+    "timestamp": "2026-01-31T18:49:12.654Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352677-880",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 94,
+    "timestamp": "2026-01-31T18:49:12.677Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352699-662",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 98,
+    "timestamp": "2026-01-31T18:49:12.699Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352717-625",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 102,
+    "timestamp": "2026-01-31T18:49:12.717Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352740-712",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 106,
+    "timestamp": "2026-01-31T18:49:12.740Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352790-88",
+    "patientId": "P001",
+    "measurementType": "SPO2",
+    "value": 90,
+    "timestamp": "2026-01-31T18:49:12.790Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "T-1769885352816-659",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 140,
+    "timestamp": "2026-01-31T18:49:12.816Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "EM-1",
+    "patientId": "P-URG1",
+    "measurementType": "HEART_RATE",
+    "value": 180,
+    "timestamp": "2026-01-31T18:49:12.846Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360947-384",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 78,
+    "timestamp": "2026-01-31T18:49:20.948Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-455",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 82,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-228",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 180,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-847",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 78,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-424",
+    "patientId": "P001",
+    "measurementType": "SPO2",
+    "value": 98,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-928",
+    "patientId": "P001",
+    "measurementType": "TEMPERATURE",
+    "value": 36.9,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-595",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 85,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-167",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 132,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-751",
+    "patientId": "P001",
+    "measurementType": "SPO2",
+    "value": 95,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-24",
+    "patientId": "P001",
+    "measurementType": "SPO2",
+    "value": 93,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-658",
+    "patientId": "P001",
+    "measurementType": "SPO2",
+    "value": 91,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-573",
+    "patientId": "P001",
+    "measurementType": "SPO2",
+    "value": 90,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-431",
+    "patientId": "P001",
+    "measurementType": "HEART_RATE",
+    "value": 82,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  },
+  {
+    "measurementId": "M-1769885360950-356",
+    "patientId": "P001",
+    "measurementType": "SPO2",
+    "value": 97,
+    "timestamp": "2026-01-31T18:49:20.950Z",
+    "signalQuality": 1
+  }
+]
